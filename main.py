@@ -15,14 +15,14 @@ def create_company_report(name, url, domain_name, ip_address, nmap, whois):
     create_directory(project_dir)
 
     # Call the write_file function
-    write_file(project_dir+'/url.txt',url)
-    write_file(project_dir+'/domain_name.txt',domain_name)
-    write_file(project_dir+'/ip_address.txt',ip_address)
-    write_file(project_dir+'/nmap.txt',nmap)
-    write_file(project_dir+'/whois.txt',whois)
+    write_file(project_dir + "/url.txt", url)
+    write_file(project_dir + "/domain_name.txt", domain_name)
+    write_file(project_dir + "/ip_address.txt", ip_address)
+    write_file(project_dir + "/nmap.txt", nmap)
+    write_file(project_dir + "/whois.txt", whois)
 
 # Gather all company data
-def gather_company_info(name,url): 
+def gather_company_info(name, url): 
  
     domain_name = get_domain_name(url) 
     ip_address = get_ip_address(domain_name) 
